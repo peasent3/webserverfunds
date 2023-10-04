@@ -7,6 +7,33 @@
 
             }
         </style>
+
+          <script>
+
+        function showAlert() {
+            alert ("I'll keep these for you :D!");
+        }
+
+        function textchange() {
+            document.getElementById("text").innerHTML = "What you really need start playing leage of legends";
+        }
+
+        function invis() {
+            document.getElementById("text2").style.display='none';
+        }
+
+        function imgchg() {
+            document.getElementById("myImage").src='tyler2.jpg';
+        }
+
+        function change(word) {
+            word.innerHTML="BOO!";
+        }
+        function x(){
+            alert ("This filed is required!");
+        }
+        </script>
+
     </head>
 
     <h1> Playing League of Legends </h1>
@@ -15,8 +42,15 @@
     <Img src="league.jpg">
     
     <body>
-        <p> League of legend is a game made for not so mentaly stable. This game consist of a player vs player team game where your main goal is to get the enemy team mad before yours does. </p>
-        <p> What does it take to play league</p>
+        <style>
+            body {
+              text-align: center;
+
+            } 
+        </style>
+        <p> League of legend is a game made for not so mentaly stable. This game consist of a player vs player team game where your main goal is to get the enemy team mad before yours does. </p1>
+        <p id="text"> What does it take to play league</p>
+        <p id="text2">Peek-ka-boo</p>
     <divs>
         <li>Be Age 3+</li>
 
@@ -26,14 +60,23 @@
 
             <p> To play
                 <span><a href="https://signup.leagueoflegends.com/en-us/signup/redownload" target="blank"> <input type="button" value="Play"> </a></span>
+                <button onclick="textchange()">Press This!</button>
+                <button onclick="invis()">Press Hide</button>
+                <button onclick="document.getElementById('text2').style.display='block'" >Press Show</button>
             </p>
     </divs>
     </body>
 
     <body>
         <h4> Should you play ?</h4>
-        <p> Heres a quick quiz to see if you have the requirements </p>
 
+        <p>This is what an average league player looks like!</p>
+        <Img id="myImage" width="30%" src="ttyler.jpg">
+        <button onclick="imgchg()">Press Change</button>
+        <p> Heres a quick quiz to see if you have the requirements </p>
+        <p>
+            <button onclick="change(this)">Press Me :D</button>
+        </p>
         <form>
             <fieldset>
                 <label for="fname">First name:</label><br>
@@ -42,7 +85,9 @@
                 <input type="text" id="lname" name="lname" required><br>
 
                 <label for="age">Age:(0-99)</label><br>
-                <input type="text" id="age" name="age" pattern="[0-9]{2}" required><br>
+                <input type="text" name="age" pattern="[0-9]{2}" required onblur="x()"><br>
+              
+                
             
 
         <P>How mentaly stable are you</P>
@@ -63,6 +108,8 @@
                
           
             <input type="submit" value="Submit">
+            <button type="button" onclick="showAlert()">Click Me!</button>
+
         </fieldset> 
         </form>
 
