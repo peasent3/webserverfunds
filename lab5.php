@@ -6,7 +6,6 @@
     echo "Hello, $firstname $lastname!";
     echo "Hello, " . $firstname . " " . $lastname . "!";
     echo "Hello, {$firstname} {$lastname}!";
-    <br>
     echo "Goodbye $firstname $lastname";
     ?>
 </body>
