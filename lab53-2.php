@@ -13,7 +13,7 @@
 
     <h2>Study Club Register</h2>
 
-    <form action="register.php" method = "GET">
+    <form action="register.php" method = "POST">
 
 
     <p> Enter your name: <input type="text" id="name" name="name" /></p> 
