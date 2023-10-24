@@ -5,7 +5,7 @@
     <h1> Task 3.3 (content of array get and post) </h1>
 
     <?php
-        $id = (int)($_GET["participant_name"]);
+        $id = (int)($_GET["participantname"]);
         $server = "localhost";
         $username = "bluenix";
         $password = "1z3ass5z6p";
@@ -36,7 +36,7 @@ Participant: <?= $id ?>. <br/>
 <?php
     foreach($result as $row) 
     { 
-        echo "{$row['participant_name']} authored {$row['participant_age']}\n <br>";
+        echo "{$row['participant_name']} is {$row['participant_age']} years old\n <br>";
     }
     mysqli_close($conn);
     ?>

@@ -18,7 +18,7 @@
             die("Connection failed: {mysqli_connect_error()}");
             echo "Connected successfully";
         }
-        $sql = "select * from books;";
+        $sql = "select * from participant_list;";
         $result = mysqli_query($conn, $sql);
     ?>
 
@@ -59,8 +59,30 @@
     </div>
 
     <input type="submit"> 
-</form>
+
+    </form>
 
 </body>
+
+    <h1>Participant_list info </h1>
+
+        <form action="clubresponse.php" method = "get">
+            
+            <div> List of Participant:<br/>
+            <label for="participant_name">name:</label>
+                    <select id="participant_name" name="participant_name">
+                    <?php
+                        foreach($result as $row) 
+                        { 
+                            echo "<option value='{$row['id']}'>{$row['participant_name']}</option>\n";
+                        }
+                        mysqli_close($conn);
+                    ?>
+                    </select>
+                    <br>
+            </div>
+            <input type="submit"> 
+        </form>
+
 </body>
 
