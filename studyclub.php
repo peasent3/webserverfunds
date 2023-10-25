@@ -88,7 +88,7 @@
     <h1>Modify Info</h1>
 
     <form action="modifyinfo.php" method="get">
-        <select id="participantname" name="participantname">
+        <select id="participantname" name="participantname"\n>
         <?php
             foreach($result as $row) 
                 { 
@@ -97,7 +97,7 @@
                     mysqli_close($conn);
         ?>
 
-        <input type ="number" required id="participanage" name="participantage">
+        <input type ="number" required id="participanage" name="participantage"\n>
         <input type="submit"> 
     </form>
 
