@@ -33,7 +33,7 @@
     <?php
         foreach($result as $row) 
         { 
-            echo "{$row['author']} authored {$row['book_name']}\n <br>";
+            echo "{$row['participant_name']} is {$row['participant_age']} years old\n <br>";
         }
         mysqli_close($conn);
         ?>
