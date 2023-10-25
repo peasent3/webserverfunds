@@ -69,8 +69,8 @@
         <form action="clubresponse.php" method = "get">
             
             <div> List of Participant:<br/>
-            <label for="participant_name">name:</label>
-                    <select id="participant_name" name="participant_name">
+            <label for="peoplename">name:</label>
+                    <select id="participantname" name="participantname">
                     <?php
                         foreach($result as $row) 
                         { 
