@@ -19,7 +19,7 @@
             echo "Connected successfully";
         }
 
-        $sql = "select * from participant_list where participant_name = {$id};";
+        $sql = "select * from participant_list where id = {$id};";
         $result = mysqli_query($conn, $sql);
     ?>
 
@@ -33,6 +33,7 @@
 <h1> Response of Participant </h1>
 
 Participant: <?= $id ?>. <br/>
+
 <?php
     foreach($result as $row) 
     { 
