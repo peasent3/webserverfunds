@@ -84,5 +84,23 @@
             <input type="submit"> 
         </form>
 
+
+    <h1>Modify Info</h1>
+
+    <form action="modifyinfo.php" method="get">
+        <select id="participantname" name="participantname">
+        <?php
+            foreach($result as $row) 
+                { 
+                    echo "<option value='{$row['id']}'>{$row['participant_name']}</option>\n";
+                }
+                    mysqli_close($conn);
+        ?>
+
+        <input type ="number" required id="participan_age" name="participant_age">
+        <input type="submit"> 
+    </form>
+
+                        
 </body>
 
