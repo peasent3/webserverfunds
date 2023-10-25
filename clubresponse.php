@@ -19,7 +19,7 @@
             echo "Connected successfully";
         }
 
-        $sql = "select * from register where id = {$id};";
+        $sql = "select * from participant_list where participant_name = {$id};";
         $result = mysqli_query($conn, $sql);
     ?>
 
