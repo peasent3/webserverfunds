@@ -9,7 +9,7 @@
         $server = "localhost";
         $username = "bluenix";
         $password = "1z3ass5z6p";
-        $database = "register";
+        $database = "participant_list";
         $conn = mysqli_connect($server, $username, $password, $database);
 
         //Connection checker
