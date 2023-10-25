@@ -97,7 +97,7 @@
                     mysqli_close($conn);
         ?>
 
-        <input type ="number" required id="participan_age" name="participant_age">
+        <input type ="number" required id="participanage" name="participantage">
         <input type="submit"> 
     </form>
 
