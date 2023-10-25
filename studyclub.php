@@ -85,7 +85,7 @@
         </form>
 
 
-    <h1>Modify Info</h1>
+    <h1>Modify Participant Age</h1>
 
     <form action="modifyinfo.php" method="get">
         <select id="participantname" name="participantname">
