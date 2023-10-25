@@ -18,7 +18,7 @@
             die("Connection failed: {mysqli_connect_error()}");
             echo "Connected successfully";
         }
-        $sql = "UPDATE participant_list SET participant_age = {$change} where id={$id};";
+        $sql = "update participant_list set participant_age = {$change} where id={$id};";
         $result = mysqli_query($conn, $sql);
 
         $sql = "select * from  participant_list where id = {$id};";
@@ -29,7 +29,7 @@
 
 <body>
 
-    You chosed the book: <?= $id ?>. <br/>
+    The Participant's ID: <?= $id ?>. <br/>
     <?php
         foreach($result as $row) 
         { 
