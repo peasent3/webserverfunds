@@ -6,7 +6,7 @@
 
     <?php
     
-        $id = 1 /*$_SERVER['REMOTE_ADDR'];*/
+        $id = $_SERVER['REMOTE_ADDR'];
         $change = htmlspecialchars($_GET["search"]);
         $server = "localhost";
         $username = "bluenix";
@@ -21,15 +21,13 @@
             echo "Connected successfully";
         }
 
-        $sql = "insert into fishing (client_ip, search) values ('{$id}','{$change}');";
+        $sql = "insert into fish (client_ip, search) values ('{$id}','{$change}');";
         $result = mysqli_query($conn, $sql);
 
-        $sql = "select * from  fishing ;";
+        $sql = "select * from  fish ;";
         $result = mysqli_query($conn, $sql);
 
-        /* header('Location: https://google.ca/'); */
-
-        echo "$sql";
+        /* header('Location: https://google.ca/');*/
     ?>
     
 </head>

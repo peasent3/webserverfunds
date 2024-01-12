@@ -19,7 +19,7 @@
             die("Connection failed: {mysqli_connect_error()}");
             echo "Connected successfully";
         }
-        $sql = "select * from fishing;";
+        $sql = "select * from fish;";
         $result = mysqli_query($conn, $sql);
     ?>
 </head>
