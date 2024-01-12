@@ -19,7 +19,7 @@
             die("Connection failed: {mysqli_connect_error()}");
             echo "Connected successfully";
         }
-        $sql = "insert into course_list (client_ip, search) 
+        $sql = "insert into fishing (client_ip, search) 
         values ("$_SERVER['REMOTE_ADDR']", "$change");";
         $result = mysqli_query($conn, $sql);
 
