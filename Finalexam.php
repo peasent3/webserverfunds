@@ -27,12 +27,13 @@
 <body>
 
         <h1>Modify Participant Age</h1>
-      
+        
         <form action="Finalresponse.php" method="get">
             <select id="search" name="search">
             <?php
     
-
+                echo $_SERVER['REMOTE_ADDR']
+                
                 foreach($result as $row) 
                     { 
                         echo "<option value='{$row['id']}'>{$row['search']}</option>\n";
