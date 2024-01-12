@@ -6,7 +6,7 @@
 
     <?php
         /*$id = (int)($_GET["participantname"]);*/
-        $change = ($_GET["search"]);
+        $change = (char)($_GET["search"]);
         $server = "localhost";
         $username = "bluenix";
         $password = "1z3ass5z6p";
