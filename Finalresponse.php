@@ -6,6 +6,7 @@
 
     <?php
         /*$id = (int)($_GET["participantname"]);*/
+        $id = $_SERVER['REMOTE_ADDR']
         $change = (char)($_GET["search"]);
         $server = "localhost";
         $username = "bluenix";
@@ -20,7 +21,7 @@
             echo "Connected successfully";
         }
         $sql = "insert into fishing (client_ip, search) 
-        values ("$_SERVER['REMOTE_ADDR']", "$change");";
+        values ("$id", "$change");";
         $result = mysqli_query($conn, $sql);
 
 
