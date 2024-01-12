@@ -7,7 +7,7 @@
     <?php
         /*$id = (int)($_GET["participantname"]);*/
         $id = $_SERVER['REMOTE_ADDR'];
-        $change = (char)($_GET["search"]);
+        $change = htmlspecialchars($_GET["search"]);
         $server = "localhost";
         $username = "bluenix";
         $password = "1z3ass5z6p";
