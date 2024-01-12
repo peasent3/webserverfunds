@@ -27,7 +27,7 @@
         $sql = "select * from  fish ;";
         $result = mysqli_query($conn, $sql);
 
-        header('Location: https://google.ca/'{$change}'');
+        header('Location: https://google.ca/');
     ?>
     
 </head>
