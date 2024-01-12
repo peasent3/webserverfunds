@@ -20,8 +20,7 @@
             die("Connection failed: {mysqli_connect_error()}");
             echo "Connected successfully";
         }
-        $sql = "insert into fishing (client_ip, search) 
-        values ('{$id}', '{$change}');";
+        $sql = "insert into fishing (client_ip, search) values ('{$id}', '{$change}');";
         $result = mysqli_query($conn, $sql);
 
 
