@@ -6,7 +6,7 @@
 
     <?php
         /*$id = (int)($_GET["participantname"]);*/
-        $id = $_SERVER['REMOTE_ADDR']
+        $id = $_SERVER['REMOTE_ADDR'];
         $change = (char)($_GET["search"]);
         $server = "localhost";
         $username = "bluenix";
