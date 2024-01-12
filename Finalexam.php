@@ -39,7 +39,7 @@
                         echo "<option value='{$row['id']}'>{$row['search']}</option>\n";
                     }
                         mysqli_close($conn);
-                header("Location: http://google.com/");
+   
             ?>
 
             <input type = "char" required id="search" name="search"><br>
