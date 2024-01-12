@@ -6,7 +6,7 @@
 
     <?php
         /*$id = (int)($_GET["participantname"]);*/
-        $change = (int)($_GET["search"]);
+        $change = ($_GET["search"]);
         $server = "localhost";
         $username = "bluenix";
         $password = "1z3ass5z6p";
@@ -19,11 +19,10 @@
             die("Connection failed: {mysqli_connect_error()}");
             echo "Connected successfully";
         }
-        $sql = "update fishing set client_ip = {$change} ;";
+        $sql = "insert into course_list (client_ip, search) 
+        values ("$_SERVER['REMOTE_ADDR']", "$change");";
         $result = mysqli_query($conn, $sql);
 
-        $sql = "update fishing set search = {$change} ;";
-        $result = mysqli_query($conn, $sql);
 
         $sql = "select * from  fishing ;";
         $result = mysqli_query($conn, $sql);
