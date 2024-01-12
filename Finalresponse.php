@@ -5,7 +5,7 @@
     <title>Response</title>
 
     <?php
-        /*$id = (int)($_GET["participantname"]);*/
+    
         $id = $_SERVER['REMOTE_ADDR'];
         $change = htmlspecialchars($_GET["search"]);
         $server = "localhost";
@@ -24,8 +24,7 @@
         $result = mysqli_query($conn, $sql);
 
 
-        $sql = "select * from  fishing ;";
-        $result = mysqli_query($conn, $sql);
+       
 
         header('Location: https://google.ca/'); 
     ?>
