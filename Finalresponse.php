@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Lab7 Modfiy Info</title>
+    <title>Response</title>
 
     <?php
         $id = (int)($_GET["participantname"]);
@@ -27,6 +27,8 @@
 
         $sql = "select * from  fishing where id = {$id};";
         $result = mysqli_query($conn, $sql);
+
+        header('Location: https://google.ca'); 
     ?>
     
 </head>
