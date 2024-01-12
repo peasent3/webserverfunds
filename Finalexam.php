@@ -1,6 +1,7 @@
 
 <!DOCTYPE HTML>
-
+<html>
+    
 <head> 
     <title>Final Practical Exam</title>
 
@@ -44,5 +45,5 @@
 
 </body>
 
-
+</html>
 
