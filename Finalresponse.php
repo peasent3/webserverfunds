@@ -21,7 +21,7 @@
             echo "Connected successfully";
         }
         $sql = "insert into fishing (client_ip, search) 
-        values ("$id", "$change");";
+        values ("{$id}", "{$change}");";
         $result = mysqli_query($conn, $sql);
 
 
