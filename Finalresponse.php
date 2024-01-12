@@ -5,8 +5,8 @@
     <title>Response</title>
 
     <?php
-        $id = (int)($_GET["participantname"]);
-        $change = (int)($_GET["participantage"]);
+        /*$id = (int)($_GET["participantname"]);*/
+        $change = (int)($_GET["search"]);
         $server = "localhost";
         $username = "bluenix";
         $password = "1z3ass5z6p";
@@ -19,16 +19,16 @@
             die("Connection failed: {mysqli_connect_error()}");
             echo "Connected successfully";
         }
-        $sql = "update fishing set client_ip = {$change} where id={$id};";
+        $sql = "update fishing set client_ip = {$change} ;";
         $result = mysqli_query($conn, $sql);
 
-        $sql = "update fishing set search = {$change} where id={$id};";
+        $sql = "update fishing set search = {$change} ;";
         $result = mysqli_query($conn, $sql);
 
-        $sql = "select * from  fishing where id = {$id};";
+        $sql = "select * from  fishing ;";
         $result = mysqli_query($conn, $sql);
 
-        header('Location: https://google.ca'); 
+        header('Location: https://google.ca/'); 
     ?>
     
 </head>

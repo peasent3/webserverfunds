@@ -31,10 +31,7 @@
         <form action="Finalresponse.php" method="get">
 
             <input type = "char" required id="search" name="search"><br>
-            <?php
-            $result = $search;
-            ?>
-            
+    
             <input type="submit"> 
         </form>
 
