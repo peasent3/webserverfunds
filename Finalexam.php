@@ -32,7 +32,7 @@
             <select id="search" name="search">
             <?php
     
-                echo "$_SERVER['REMOTE_ADDR']"
+                echo $_SERVER['REMOTE_ADDR'];
 
                 foreach($result as $row) 
                     { 
