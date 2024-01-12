@@ -1,7 +1,8 @@
 
 <!DOCTYPE HTML>
+
 <html>
-    
+
 <head> 
     <title>Final Practical Exam</title>
 
@@ -30,7 +31,7 @@
         <form action="Finalresponse.php" method="get">
             <select id="search" name="search">
             <?php
-                echo $_SERVER['REMOTE_ADDR'] 
+    
 
                 foreach($result as $row) 
                     { 
@@ -39,7 +40,7 @@
                         mysqli_close($conn);
             ?>
 
-            <input type required id="search" name="search"><br>
+            <input type = "char" required id="search" name="search"><br>
             <input type="submit"> 
         </form>
 
